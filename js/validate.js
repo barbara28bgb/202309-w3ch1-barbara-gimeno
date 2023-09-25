@@ -1,8 +1,24 @@
-const validateForm = (target) => {
-  for (let index = 0; index < target.length; index++) {
-    const element = array[index];
-    console.log(element.id);
-    console.log(element.value);
-    console.log(element.checked);
-  }
+const formElement = document.querySelector("form");
+
+formElement.addEventListener("submit", (event) => {
+  event.preventDefault();
+  validateForm(event.target);
+});
+
+// const formElementAffair = document.querySelector("#affair");
+
+// formElementAffair.addEventListener("input", (event) => {
+//   console.log(event.target.value);
+// });
+
+let sender;
+let addressee;
+let affair;
+let emailBody;
+let atttch;
+let programSend;
+let dateTime;
+
+const validateForm = (form) => {
+  console.log(form);
 };

@@ -3,5 +3,7 @@ const formElement = document.querySelector("form");
 formElement.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  validateForm();
+  validateForm(event.target);
 });
+
+//const getCharacters = document.querySelector("");

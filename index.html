@@ -13,25 +13,43 @@
 </head>
 
 <body>
-  <form>
-    <label for="sender">Remitente </label>
-    <input id="sender" type="email" value="poor-student@isdicoders.com" />
-    <label for="addressee">Destinatario </label>
-    <input id="addressee" type="test" />
-    <label for="affair">Asunto </label>
-    <input id="affair" type="text" />
-    <label for="email-body">Cuerpo</label>
-    <input id="email-body" type="textarea">
-    <label for="attach">Archivo adjunto</label>
-    <input id="attach" type="file">
-    <label for="program-send">Programar envio </label>
-    <input id="program-send" type="checkbox">
-    <button>Programar envio</button>
-
-
-
-  </form>
-
+  <div class="main-container">
+    <form>
+      <div class="form-content">
+        <label class="form-content" for="sender">Remitente </label>
+        <input id="sender" type="email" value="poor-student@isdicoders.com" />
+      </div>
+      <div class="form-content">
+        <label for="addressee">Destinatario </label>
+        <input id="addressee" type="test" />
+      </div>
+      <div class="form-content">
+        <label for="affair">Asunto </label>
+        <input id="affair" type="text" />
+      </div>
+      <div class="form-content">
+        <label for="email-body">Cuerpo</label>
+        <input id="email-body" type="textarea">
+      </div>
+      <div class="form-content">
+        <label for="attach">Archivo adjunto</label>
+        <input class="attached" id="attach" type="file">
+      </div>
+      <div class="form-content">
+        <label>
+          Programar envío
+          <input id="program-send" type="checkbox">
+        </label>
+      </div>
+      <div>
+        <label>
+          Fecha y hora para enviar
+          <input type="datetime-local">
+        </label>
+        <button class="button">Envio</button>
+      </div>
+    </form>
+  </div>
 </body>
 
 </html>
